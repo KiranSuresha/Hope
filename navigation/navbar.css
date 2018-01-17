@@ -15,7 +15,7 @@ html {
 }
 
 .nav li:hover {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .navbar {
@@ -30,4 +30,157 @@ html {
     font-size: 1.5em;
 
     color: #5d8aa8;
+}
+
+.vertical-alignment-helper {
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width: inherit;
+    height: inherit;
+    max-width: inherit; /* For Bootstrap 4 - to avoid the modal window stretching full width */
+    /* To center horizontally */
+    margin: 0 auto;
+
+    pointer-events: all;
+}
+
+.form-control {
+    margin: 10px auto;
+}
+
+.jumbotron {
+    position: relative;
+
+    height: 100%;
+    margin-top: 80px;
+
+    border-radius: 0!important;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+}
+
+.jumbotron .btn {
+    padding: 10px 40px;
+
+    border-radius: 0!important;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+}
+
+
+.search-text {
+    padding-bottom: 60px;
+}
+
+.search-text .input-search {
+    width: 40%;
+    height: 45px;
+    padding-left: 20px;
+
+    color: #333;
+}
+
+.search-text .btn-search {
+    width: 80px;
+    height: 45px;
+
+    font-family: Lato;
+
+    color: #fff;
+    border: none;
+    background: #545454;
+}
+
+.search-text h4 {
+    font-weight: 700;
+
+    color: #888582;
+}
+
+footer {
+    padding: 60px 0;
+    margin-top: 40px;
+
+    background-color: #222;
+}
+
+footer ul {
+    display: inline-block;
+    padding-top: 50px;
+    margin: 0 auto;
+
+    list-style: none;
+}
+
+footer ul li {
+    float: left;
+}
+
+footer ul li a {
+    padding: 20px;
+
+    color: #b1aca1;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+
+    color: #7dabdb;
+}
+
+.footer-top {
+    padding-bottom: 50px;
+}
+
+.footer-top .fa {
+    padding-right: 10px;
+
+    font-size: 18px;
+
+    color: #fff;
+}
+
+.footer-top a {
+    padding: 10px;
+
+    color: #fff;
+    background: #333;
+}
+
+.footer-top .col-lg-2:hover .fa,
+.footer-top .col-lg-2:hover a {
+    text-decoration: none;
+
+    color: #7dabdb;
+}
+
+#top {
+    position: fixed;
+    right: 30px;
+    bottom: 350px;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 18px;
+    line-height: 40px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #fff;
+    border-radius: 3px;
+    background: #7dabdb;
 }
